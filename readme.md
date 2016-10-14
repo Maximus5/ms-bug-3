@@ -39,7 +39,7 @@ $form.add_Load($set_pos)
 
 ## C++ project (WinAPI)
 
-Simple C++ project (you may download binary from releases) demostrates the problem in details.
+Simple C++ project (you may download [binary from releases](https://github.com/Maximus5/ms-bug-3/releases)) demostrates the problem in details.
 It takes into account active monitor working area and tries to move its window to the screen edges.
 
 Just click the button, do you see the gap?
