@@ -17,3 +17,22 @@ And here are links:
 * [ConEmu Issue 284](https://github.com/Maximus5/ConEmu/issues/284)
 * [Simple PowerShell script demonstrating the problem](https://gist.github.com/Maximus5/d6ef8119c25937aee6bc110fc50bfe5a)
 * I belive, I reported the problem via feedback application, but I can't find this report now.
+
+
+## Simple PowerShell script
+
+**Requirements**
+
+1. Windows 10 of course.
+2. Task bar panel location is bottom or right edge of screen. Script does not check *working* area coordinates.
+
+~~~
+[void][reflection.assembly]::LoadWithPartialName("System.Windows.Forms")
+$form = New-Object System.Windows.Forms.Form
+$form.Text = "Hello World"
+$set_pos = { $form.Location = New-Object System.Drawing.Point(0, 0); }
+$form.add_Load($set_pos)
+[void]$form.ShowDialog()
+~~~
+
+![Sample result](https://github.com/Maximus5/ms-bug-3/blob/master/PowerShellTest.jpg?raw=true)
