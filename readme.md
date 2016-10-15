@@ -51,3 +51,13 @@ Well, lets move the window dragging its caption with mouse. Do you see **negativ
 Really? **Negative** coordinates of the **normal** (not maximized) window on the primary monitor?
 
 ![Sample result](https://github.com/Maximus5/ms-bug-3/blob/master/WinApiNegative.png?raw=true)
+
+
+## The question
+
+Personally, I consider this breaking change in coordinate system logic is a bug.
+But it would be nice to recieve a feedback from Microsoft.
+
+* Is it a confirmed bug?
+* Is it a ‘feature’?
+* Is there any workaround to put the window at the edge of the monitor working area?
